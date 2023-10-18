@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" type="image/ico" href="/assets/images/bg/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/slicknav.min.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="/assets/css/typography.css">
+    <link rel="stylesheet" href="/assets/css/default-css.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    
+    <!-- preloader area end -->
+    <!-- login area start -->
+    <div class="login-area login-bg">
+        <div class="container" style="background-color: #080F20;">
+         <a href="/"><img src="/assets/images/bg/logo.png" alt="logo"></a>	
+        <div class="container">
+        
+        
+            <div class="login-box ptb--100">
+                <form action="/trade/signup" method="post">
+                    <div class="login-form-head">
+                        <h4>Create Account</h4>
+                        <p style="color: red;"> Sign up and Start Trading Stock and ArssetConnectHub Topup</p>
+                        
+
+                    </div>
+                        <%-include("../partials/messages") %>
+                        <div class="login-form-body">
+                            <div class="form-gp">
+                                <label for="exampleInputName1">First Name</label>
+                                <input type="text"  name="firstname" id="exampleInputName1" required>
+                                <i class="ti-user"></i>
+                            </div>
+                            
+                            <div class="form-gp">
+                                <label for="exampleInputName1">Last Name</label>
+                                <input type="text" name="lastname" id="exampleInputName1"  required>
+                                <i class="ti-user"></i>
+                            </div>
+                            <div class="form-group  ">
+                                <select required="required" class="form-control" name="country">
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Euro">Euro</option>
+                                </select>
+                            </div>
+                        <div class="form-gp">
+                            <label for="exampleInputName1">ZipCode</label>
+                            <input type="text" name="zip" id="exampleInputName1"  required>
+                            <i class="ti-zip"></i>
+                        </div>
+                        
+                        <div class="form-gp">
+                            <label for="exampleInputEmail1">Email (Username)</label>
+                            <input type="email" name="email" id="exampleInputEmail1" placeholder="email" required>
+                            <i class="ti-email"></i>
+                        </div>
+                        
+                        <div class="form-gp">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="password" id="exampleInputPassword1"  required>
+                            <i class="ti-lock"></i>
+                        </div>
+
+                        <div class="form-gp">
+                            <label for="exampleInputPassword1">Retype Password</label>
+                            <input type="password" name="password2" id="exampleInputPassword1"  required>
+                            <i class="ti-lock"></i>
+                        </div>
+                        
+                        <div class="form-gp">
+                            <label for="exampleInputPassword2">Phone</label>
+                            <input type="phone"  name="phone" id="exampleInputPassword2"  required>
+                            <i class="ti-mobile"></i>
+                            <input name="country" type="hidden" class="form-control" id="country" value=""/>
+                        </div>
+                        
+                     <div class="form-group">
+                        <select required="required"  class="form-control " name="product_type">
+                            <option selected="selected" value="">Product Type</option>
+                            <option value="trade">Forex</option>
+                            <option value="mining">Cryptos</option>
+                            <option value="mining">Stocks</option>
+                            <option value="mining">Indices</option>
+                        </select>            
+                    </div>
+
+                    <div class="form-group">
+                        <select required="required" class="form-control " name="investment_plans">
+                            <option selected="selected" value="">Investment Plans</option>
+                            <option value="Basic Plan" name="acctype">Standard Plan: 0.054BTC -1BTC</option>
+                            <option value="Standard Plan" name="acctype">Pro Plan:  0.11 - 10BTC</option>
+                            <option value="VIP Plan" name="acctype">VIP Plan: 10BTC and Above</option>
+                        </select>            
+                    </div>
+
+                    <div class="form-group  ">
+                        <select required="required"  class="form-control " name="investment_options">
+                            <option selected="selected" value="">Investment Option</option>
+                            <option value="mining">MT4 (Forex, CFDs on Stocks, Equity Indices, Metals, Energies)</option>
+                            <option value="trade">MT5 (Forex, CFDs on Stocks, Equity Indices, Metals, Energies)</option>
+                        </select>            
+                    </div>
+                     <div class="form-group">
+                                
+                            <b class="text-muted mb-3 mt-4 d-block">Account Currency:</b>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="USD" checked id="customRadio4" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio4">$ USD</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="R$" checked id="customRadio10" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio10">R$</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="Q" checked id="customRadio11" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio11">Q</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="zł" checked id="customRadio12" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio12">zł</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="GBP" id="customRadio5" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio5">&pound; GBP</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="GBP" id="customRadio6" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio6">&euro; EUR</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" value="GBP" id="customRadio7" name="currency" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio7">&#3647; BTC</label>
+                            </div>
+                                    
+                                    
+                        </div> 
+                        
+                        <div class="submit-btn-area">
+                            <button id="form_submit" name="btn" >Submit <i class="ti-arrow-right"></i></button>
+                           
+                        </div>
+                        <div class="form-footer text-center mt-5">
+                            <p class="text-muted">Already have an account? <a href="/trade/signin">Sign in</a><p class="text-muted"><a href="/"><b>Homepage</b></a></p></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- login area end -->
+
+            <!-- jquery latest version -->
+            <script src="/assets/js/vendor/jquery-2.2.4.min.js"></script>
+            <!-- bootstrap 4 js -->
+            <script src="/assets/js/popper.min.js"></script>
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <script src="/assets/js/owl.carousel.min.js"></script>
+            <script src="/assets/js/metisMenu.min.js"></script>
+            <script src="/assets/js/jquery.slimscroll.min.js"></script>
+            <script src="/assets/js/jquery.slicknav.min.js"></script>
+            
+            <!-- others plugins -->
+            <script src="/assets/js/plugins.js"></script>
+            <script src="/assets/js/scripts.js"></script>
+            
+        </body>
+        
+        </html>
